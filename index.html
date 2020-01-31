@@ -8,14 +8,20 @@
     <title>Shopping Cart</title>
 </head>
 <body>
+    <select name="currency" id="currency">
+        <option value="us">Dollars</option>
+        <option value="uk">Pounds</option>
+    </select>
     <button class="item" data-price='6.99'id='pizza'>Pizza</button>
     <button class="item" data-price='2.99'id='beer'>Beer</button>
     <button class='item' data-price='4.00'id='milk'>Milk</button>
     <button class='item' data-price='7.99'id='bread'>Bread</button>
     <ul>
         <li># Items <span id="numberItems">0</span></li>
-        <li>Cart Total: $<span id="cartTotal">0.00</span></li>
+        <li>Cart Total: <span id="cartTotal">0.00</span></li>
     </ul>
+    <button id="viewCart">View Cart</button>
+    <ul id="cart"></ul>
     <script src="/js/app.js"></script>
 </body>
 </html>
